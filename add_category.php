@@ -20,7 +20,7 @@ if(isset($_POST['create'])){
     $query->execute();
     $lastInsertId = $dbh->lastInsertId();
     if($lastInsertId){
-        $_SESSION['msg']="Brand Listed successfully";
+        $_SESSION['msg']="Brand Listed successfullyy";
         header('location:manage_category.php');
     }else {
         $_SESSION['error']="Something went wrong. Please try again";
